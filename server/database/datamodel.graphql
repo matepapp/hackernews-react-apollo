@@ -1,6 +1,6 @@
 type Vote {
   id: ID! @unique
-  link: Link!  
+  link: Link!
   user: User!
 }
 

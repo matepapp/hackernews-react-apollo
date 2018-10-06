@@ -3,3 +3,7 @@ secret: mysecret123
 hooks:
   post-deploy:
     - yarn graphql get-schema --project database
+#endpoint: http://localhost:4466
+#endpoint: http://localhost:4466
+#endpoint: http://localhost:4466
+endpoint: https://eu1.prisma.sh/mate-papp-6c597a/hackernews/dev

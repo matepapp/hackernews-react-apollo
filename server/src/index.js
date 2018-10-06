@@ -9,7 +9,7 @@ const resolvers = {
   Query,
   Mutation,
   Subscription,
-  Feed,
+  Feed
 }
 
 const server = new GraphQLServer({
@@ -19,11 +19,11 @@ const server = new GraphQLServer({
     ...req,
     db: new Prisma({
       typeDefs: 'src/generated/prisma.graphql',
-      endpoint: '__PRISMA_ENDPOINT__',
+      endpoint: 'https://eu1.prisma.sh/mate-papp-6c597a/hackernews/dev',
       secret: 'mysecret123',
       debug: true
-    }),
-  }),
+    })
+  })
 })
 
 server.start(() => console.log('Server is running on http://localhost:4000'))
